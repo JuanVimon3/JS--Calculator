@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result" id="result"></div>
+        <div class="numbers-buttons">              
+            <button value="1" onclick="appendNumber(1)">1</button>
+            <button value="2" onclick="appendNumber(2)">2</button>
+            <button value="3" onclick="appendNumber(3)">3</button>
+            <button value="4" onclick="appendNumber(4)">4</button>
+            <button value="5" onclick="appendNumber(5)">5</button>
+            <button value="6" onclick="appendNumber(6)">6</button>
+            <button value="7" onclick="appendNumber(7)">7</button>
+            <button value="8" onclick="appendNumber(8)">8</button>
+            <button value="9" onclick="appendNumber(9)">9</button>
+            <button value="0" onclick="appendNumber(0)">0</button>
+            <button value="+" onclick="setOperation('sum')" id="sum">+</button>
+            <button value="-" onclick="setOperation('rest')" id="rest">-</button>
+            <button value="/" onclick="setOperation('divide')" id="divide">/</button>
+            <button value="*" onclick="setOperation('mult')" id="mult">*</button>
+            <button value="=" onclick="calculateResult()">=</button>
+        </div>
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>
