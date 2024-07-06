@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="result" id="result"></div>
+        <div class="result" id="result">0</div>
         <div class="numbers-buttons">              
             <button value="1" onclick="appendNumber(1)">1</button>
             <button value="2" onclick="appendNumber(2)">2</button>
@@ -25,6 +25,8 @@
             <button value="/" onclick="setOperation('divide')" id="divide">/</button>
             <button value="*" onclick="setOperation('mult')" id="mult">*</button>
             <button value="=" onclick="calculateResult()">=</button>
+            <button value="del" onclick="deletePrev()" id="del">Del</button>
+            <button value="C" onclick="restart()" id="C">C</button>
         </div>
         <script src="index.js"></script>
     </div>
