@@ -61,7 +61,7 @@ const deletePrev = () => {
 
 const restart = () => {
     prevNumber = '';
-    currNumber = '';
+    currNumber = '0';
     operation = null;
     updateResult();
 }
