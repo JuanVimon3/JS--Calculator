@@ -16,10 +16,10 @@ const appendNumber = (number) => {
 
 const operate = (operation, a, b) => {
     const operations = {
-        sum: (a, b) => a + b,
-        rest: (a, b) => a - b,
-        divide: (a, b) => a / b,
-        mult: (a, b) => a * b
+        '+': (a, b) => a + b,
+        '-': (a, b) => a - b,
+        '/': (a, b) => a / b,
+        '*': (a, b) => a * b
     }
     return operations[operation](a, b);
 }
@@ -47,7 +47,8 @@ const setOperation = (op) => {
     }
     operation = op;
     prevNumber = currNumber;
-    currNumber = '';
+    currNumber += ` ${op} `;
+    updateResult()
 }
 
 const updateResult = () => {
